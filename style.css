@@ -42,6 +42,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 60px; /* 375% */
+    cursor: pointer;
 }
 .profile {
     width: 247px;
@@ -56,6 +57,8 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 60px; /* 375% */
+    border: none;
+    cursor: pointer;
 }
 .logo {
     color: #000;
@@ -90,7 +93,6 @@ header {
 }
 .nav {
     display: flex;
-    width: 1440px;
     height: 81px;
     flex-shrink: 0;
     background: #10B981;
@@ -110,7 +112,9 @@ header {
     text-decoration: none;
 }
 .about {
-
+    margin-left: 85px;
+    display: flex;
+    gap: 129px;
 }
 .h2 {
     width: 545px;
@@ -120,6 +124,7 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-top: 126px;
 }
 .h1 {
     width: 549px;
@@ -129,6 +134,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 35px; /* 166.667% */
+    margin-top: 30px;
 }
 .about_btn {
     width: 263px;
@@ -144,11 +150,65 @@ header {
     font-weight: 600;
     line-height: normal;
     border: none;
+    margin-top: 50px;
 }
-.about_img {
+.about_reviews {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.icon {
+    position: relative;
+    width: 180px;
+    margin-top: 107px;
+}
+.icon_1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.icon_2 {
+    position: absolute;
+    left: 37px;
+}
+.icon_3 {
+    position: absolute;
+    left: 74px;
+}
+.icon_4 {
+    position: absolute;
+    left: 111px;
+}
+.about_reviews_text {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 500;
+    color: var(--textprimarycolor);
+    display: inline-block;
+    width: 120px;
+    margin-left: 14px;
+    margin-top: 100px;
+}
+.about_product {
     width: 272px;
     height: 477px;
     flex-shrink: 0;
     border-radius: 136px;
     background: #ECFEF4;
+    margin-top: 169px;
+}
+.button_play_video {
+    width: 84px;
+    height: 84px;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+}
+.img_headphones {
+    width: 278px;
+    height: 439px;
+}
+.play_vido_text {
+
 }
