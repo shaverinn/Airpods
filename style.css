@@ -204,11 +204,23 @@ header {
     flex-shrink: 0;
     background: none;
     border: none;
+    cursor: pointer;
 }
 .img_headphones {
     width: 278px;
     height: 439px;
 }
+.play_video {
+    margin: -130px;
+}
 .play_vido_text {
-
+    width: 112px;
+    color: #2B2626;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; /* 166.667% */
+    margin-left: -8px;
+    cursor: pointer;
 }
