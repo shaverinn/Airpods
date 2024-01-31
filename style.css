@@ -13,11 +13,10 @@ body {
 }
 header {
     margin: 20px 0;
-}
-.header {
-    margin-top: 37px;
+    margin-top: 35px;
 }
 .container {
+    padding: 0 15px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto; 
@@ -27,7 +26,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.header_left {
+    display: flex;
+    align-items: center;
+}
 .cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 38px;
     margin-right: 23px;
     width: 229px;
@@ -45,6 +51,9 @@ header {
     cursor: pointer;
 }
 .profile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 247px;
     height: 60px;
     flex-shrink: 0;
@@ -59,6 +68,11 @@ header {
     line-height: 60px; /* 375% */
     border: none;
     cursor: pointer;
+}
+
+.cart img,
+.profile img{
+    margin-right: 10px;
 }
 .logo {
     color: #000;
@@ -112,22 +126,22 @@ header {
     text-decoration: none;
 }
 .about {
-    margin-left: 85px;
+    padding-top: 125px;
     display: flex;
-    gap: 129px;
+    justify-content: space-between;
+    align-items: center;
 }
-.h2 {
-    width: 545px;
+.about_info > h2 {
+    max-width: 545px;
     color: #2B2626;
     font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 126px;
 }
-.h1 {
-    width: 549px;
+.about_info > p {
+    max-width: 550px;
     color: #2B2626;
     font-family: Montserrat;
     font-size: 21px;
@@ -153,14 +167,13 @@ header {
     margin-top: 50px;
 }
 .about_reviews {
+    margin-top: 60px;
     display: flex;
-    justify-content: start;
     align-items: center;
 }
 .icon {
     position: relative;
     width: 180px;
-    margin-top: 107px;
 }
 .icon_1 {
     width: 60px;
@@ -186,9 +199,7 @@ header {
     font-weight: 500;
     color: var(--textprimarycolor);
     display: inline-block;
-    width: 120px;
-    margin-left: 14px;
-    margin-top: 100px;
+    max-width: 120px;
     color: #2B2626;
     font-family: Montserrat;
     font-size: 26px;
@@ -197,12 +208,12 @@ header {
     line-height: 35px; /* 134.615% */
 }
 .about_product {
+    position: relative;
     width: 272px;
     height: 477px;
     flex-shrink: 0;
     border-radius: 136px;
     background: #ECFEF4;
-    margin-top: 169px;
 }
 .button_play_video {
     width: 84px;
@@ -217,7 +228,9 @@ header {
     height: 439px;
 }
 .play_video {
-    margin: -130px;
+    position: absolute;
+    left: -150px;
+    bottom: 70px;
 }
 .play_vido_text {
     width: 112px;
@@ -230,18 +243,19 @@ header {
     margin-left: -8px;
     cursor: pointer;
 }
-.pre_saler {
+.presaler {
     height: 591px;
     background: #845EC2;
     margin-top: 85px;
 }
 .text_product {
-    width: 692.481px;
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #FFF;
     font-family: Montserrat;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    color: #845EC2;
+    opacity: 0.5;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }

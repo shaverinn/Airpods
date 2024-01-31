@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Shopper</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Shopper</title>
-</head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_top">
+          <p class="logo"><span class="Shop">Shop</span>per</p>
 
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="header_top">
-        <p class="logo"><span class="Shop">Shop</span>per</p>
-
-        <div class="header_left">
-          <input type="text" placeholder="Search Items" class="search" />
-          <button class="cart">
-            <img class="shopin_img" src="./svg/Shopping-bag.svg" alt="icon" />
-            0 Items Added
-          </button>
-          <button class="profile">
-            <img src="./svg/Profile 1.svg" alt="icon" />
-            Login or Sign Up
-          </button>
+          <div class="header_left">
+            <input type="text" placeholder="Search Items" class="search" />
+            <button class="cart">
+              <img class="shopin_img" src="./svg/Shopping-bag.svg" alt="icon" />
+              0 Items Added
+            </button>
+            <button class="profile">
+              <img src="./svg/Profile 1.svg" alt="icon" />
+              Login or Sign Up
+            </button>
+          </div>
         </div>
       </div>
+
       <ul class="nav">
         <li>
           <a class="link" href="#">Features</a>
@@ -44,42 +48,50 @@
         </li>
       </ul>
     </header>
-    <div class="about">
-      <div class="about_info">
-        <h2 class="h2">Discover Our Latest Products</h2>
-        <h1 class="h1">
-          Lorem ipsum is a placeholder text commonly used to demonstrate the
-          visual form of a product
-        </h1>
-        <button class="about_btn">Buy Now</button>
-        <div class="about_reviews">
-          <div class="icon">
-            <img class="icon_1" src="./svg/Ellipse 7.svg" alt="icon_1">
-            <img class="icon_2" src="./svg/Ellipse 9.svg" alt="icon_2">
-            <img class="icon_3" src="./svg/Ellipse 11.svg" alt="icon_3">
-            <img class="icon_4" src="./svg/Ellipse 13.svg" alt="icon_4">
-          </div>
-          <p class="about_reviews_text">15k Well Reviews</p>
-        </div>
-      </div>
-      <div class="about_product">
-        <img class="img_headphones" src="./svg/image 6.svg" alt="headphones">
-        <div class="play_video">
-          <Button class="button_play_video"><img src="./svg/Mask group.svg" alt="video"></Button>
-          <p class="play_vido_text">Play video</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pre_saler">
-    <div class="container">
-      <div class="left_block">
-        <p class="text_product">Apple wireless Airpod</p>
-      </div>
-      <div class="right_block">
-      </div>
-    </div>
-  </div>
-</body>
 
+    <section>
+      <div class="container about">
+        <div class="about_info">
+          <h2>Discover Our Latest Products</h2>
+          <p>
+            Lorem ipsum is a placeholder text commonly used to demonstrate the
+            visual form of a product
+          </p>
+          <button class="about_btn">Buy Now</button>
+          <div class="about_reviews">
+            <div class="icon">
+              <img class="icon_1" src="./svg/Ellipse 7.svg" alt="icon_1" />
+              <img class="icon_2" src="./svg/Ellipse 9.svg" alt="icon_2" />
+              <img class="icon_3" src="./svg/Ellipse 11.svg" alt="icon_3" />
+              <img class="icon_4" src="./svg/Ellipse 13.svg" alt="icon_4" />
+            </div>
+            <p class="about_reviews_text">15k Well Reviews</p>
+          </div>
+        </div>
+
+        <div class="about_product">
+          <img
+            class="img_headphones"
+            src="./svg/image 6.svg"
+            alt="headphones"
+          />
+          <div class="play_video">
+            <button class="button_play_video">
+              <img src="./svg/Mask group.svg" alt="video" />
+            </button>
+            <p class="play_vido_text">Play video</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="presaler">
+      <div class="container">
+        <div class="left_block">
+          <p class="text_product">Apple wireless Airpod</p>
+        </div>
+        <div class="right_block"></div>
+      </div>
+    </section>
+  </body>
 </html>
