@@ -189,6 +189,12 @@ header {
     width: 120px;
     margin-left: 14px;
     margin-top: 100px;
+    color: #2B2626;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; /* 134.615% */
 }
 .about_product {
     width: 272px;
@@ -223,4 +229,19 @@ header {
     line-height: 35px; /* 166.667% */
     margin-left: -8px;
     cursor: pointer;
+}
+.pre_saler {
+    height: 591px;
+    background: #845EC2;
+    margin-top: 85px;
+}
+.text_product {
+    width: 692.481px;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
