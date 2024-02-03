@@ -1,7 +1,9 @@
+@import url(./fonts.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat" sans-serif;
 }
 input {
   border: none;
@@ -236,9 +238,15 @@ header {
   margin-top: 85px;
 }
 .container_produt {
-    max-width: 1200px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    min-height: 591px;
 }
 .left_block {
     padding-top: 73px;
@@ -300,6 +308,8 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 35px; /* 166.667% */
+    margin-top: 10px;
+    margin-bottom: 37px;
 }
 .offer_button {
     width: 263.183px;
@@ -309,6 +319,8 @@ header {
     background: #10B981;
     box-shadow: 0px 25px 50px 0px rgba(255, 255, 255, 0.10);
     font-family: Montserrat;
+    border: none;
+    font-size: 25px;
 }
 .view_more {
     width: 120.083px;
@@ -318,4 +330,32 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 35px; /* 166.667% */
+    margin-left: 50px;
+}
+.top_sallers {
+  /* top sellers */
+  position: absolute;
+  width: 1333px;
+  height: 829px;
+  left: 85px;
+  right: 22px;
+  top: 1722px;
+  bottom: 2527px;
+}
+.heading {
+  /* Top Sellers */
+  position: absolute;
+  width: 244px;
+  height: 54px;
+  left: 720px;
+  right: 720px;
+  top: 121px;
+  bottom: -947px;
+  color: rgb(43, 38, 38);
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: left;
 }
