@@ -475,3 +475,16 @@ header {
   font-weight: 600;
   color: white;
 }
+.last_sallers {
+  margin-top: 130px;
+}
+
+.trending {
+  margin-top: 130px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.Airdrop {
+  background: #845ec2;
+}
