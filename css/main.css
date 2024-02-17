@@ -717,6 +717,7 @@ header {
   }
   .right_block {
     text-align: center;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -839,5 +840,12 @@ header {
   }
   .view_more {
     margin-left: 56px;
+  }
+  .nav_2 {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .tumbler_left {
+    display: none;
   }
 }
