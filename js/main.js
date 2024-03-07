@@ -1,4 +1,4 @@
-const mobilMenu = document.querySelector('.mobil-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
 const header = document.querySelector('.header');
 
 const products = document.querySelector('#products');
@@ -8,23 +8,34 @@ const launches = document.querySelector('#launches');
 
 
 
-document.querySelector('.mobil-menu').addEventListener('click', () => {
-    mobilMenu.classList.remove('hidden');
-    mobilMenu.classList.add('visible')   
+document.querySelector('.menu_button').addEventListener('click', (event) => {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('visible')   
 })
 
-mobilMenu.querySelector('.mobil-menu__close')
-.addEventListener('click', () => {
-    mobilMenu.classList.remove('visible');
-    mobilMenu.classList.add('hidden')   
+mobileMenu.querySelector('.mobile-menu_close')
+    .addEventListener('click', (event) => {
+    mobileMenu.classList.remove('visible');
+    mobileMenu.classList.add('hidden')
+    mobileMenu.classList.add('swing-out-right-bck')      
 })
 
 function scrollToSections (event) {
-    const classes = event.target.classList;
-    if (classes.includes('link')) {
+    const classes = event.target.className;
+    if (classes.includes('menu-link')) {
         const content = event.target.inerText;
+        switch (content) {
+            case 'products': 
+                links.products.scrollIntoView()
+            case 'sellers': 
+                links.sellers.scrollIntoView()
+            case 'earphone': 
+                links.earphone.scrollIntoView()
+            case 'launches': 
+                links.launches.scrollIntoView()
+        }
     }
 }
 
-mobilMenu.addEventListener('click', scrollToSections);
+mobileMenu.addEventListener('click', scrollToSections);
 header.addEventListener('click', scrollToSections);
