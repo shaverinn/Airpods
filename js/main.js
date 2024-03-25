@@ -13,11 +13,9 @@ document.querySelector('.menu_button').addEventListener('click', (event) => {
     mobileMenu.classList.add('visible')   
 })
 
-mobileMenu.querySelector('.mobile-menu_close')
-    .addEventListener('click', (event) => {
+mobileMenu.querySelector('.mobile-menu_close').addEventListener('click', (event) => {
     mobileMenu.classList.remove('visible');
-    mobileMenu.classList.add('hidden')
-    mobileMenu.classList.add('swing-out-right-bck')      
+    mobileMenu.classList.add('hidden')   
 })
 
 function scrollToSections (event) {

@@ -15,6 +15,14 @@
   </head>
 
   <body>
+    <section class="display_none" id="modal">
+      <div class="Welcome-popup" id="backdrope">
+        <div class="welcome-popup_wrapper">
+          <p>Привет, добро пожаловать на маркетплейс</p>
+          <button id="close_button_modal"> Закрыть и больше не показывать</button>
+        </div>
+      </div>
+    </section>
     <section class="mobile-menu hidden">
       <button class="mobile-menu_close">x</button>
       <input type="text" placeholder="Search Items" class="search" />
@@ -22,7 +30,7 @@
         <li class="mobile-menu_links-link"> <a href="#Features">Features</a></li>
         <li class="mobile-menu_links-link"> <a href="#Products">Products</a></li>
         <li class="mobile-menu_links-link"> <a href="#Blog">Blog</a></li>
-        <li class="mobile-menu_links-link"> <a href="#">About</a></li>
+        <li class="mobile-menu_links-link"> <a href="#About">About</a></li>
     </ul>
     </section>
     <div class="container">
@@ -40,7 +48,7 @@
               />
               0 Items Added
             </button>
-            <button class="profile">
+            <button class="profile" id="login">
               <img class="profile_img" src="./svg/Profile 1.svg" alt="icon" />
               Login or Sign Up
             </button>
@@ -379,12 +387,14 @@
       <nav class="nav_3">
         <a class="nav_confidecion" href="#">Terms & Conditions</a>
         <a class="nav_confidecion_2" href="#">Privacy Policy</a>
-        <!-- <a class="fb" href="#"><img src="/svg/001-facebook.svg" alt="FB"></a>
-        <a class="tw" href="#"><img src="/svg/003-twitter.svg" alt="TW"></a>
-        <a class="inst" href="#"><img src="/svg/004-instagram.svg" alt="INST"></a> -->
+        <a class="fb" href="#"><img src="./svg/001-facebook.svg" alt="FB"></a>
+        <a class="tw" href="#"><img src="./svg/003-twitter.svg" alt="TW"></a>
+        <a class="inst" href="#"><img src="./svg/004-instagram.svg" alt="INST"></a>
       </nav>
     </footer>
   </body>
   <script src="./js/main.js"></script>
   <script src="./js/tabs.js"></script>
+  <script src="./js/popup.js"></script>
+  <!-- <script src="./js/zadacha.js"></script> -->
 </html>

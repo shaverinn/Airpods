@@ -19,7 +19,7 @@ const cardInfoList = [
 ];
 
 function getCards(cardInfoList, elem) {
-  const arr = cardInfoList.forEach(cardInfo => {
+  const arr = cardInfoList.forEach((cardInfo) => {
     const tab = `<div class="product">
         <div class="product_info green">
         <div class="product_info_img">
@@ -45,34 +45,28 @@ function getCards(cardInfoList, elem) {
         </div>
         </div>
         <button class="add_to_cart">Add to cart</button>
-        </div>`
-        elem.insertAdjacentHTML("afterbegin",tab)
-  })
-
+        </div>`;
+    elem.insertAdjacentHTML("beforebegin", tab);
+  });
 }
 
-getCards(cardInfoList,producta)
+getCards(cardInfoList, producta);
 
+// sellersTabBtnWrapper.addEventListener("click", (event) => {
+//   const target = event.target;
 
-// producta.insertAdjacentHTML("afterbegin", getCards(cardInfoList));
+//   const ovalButtons = sellersTabBtnWrapper.querySelectorAll("button");
+//   ovalButtons.forEach((button) => {
+//     btn.classList.remove("active");
+//   });
+//   target.classList.add("active");
+//   // sellersTabBtnWrapper.replaceWith("")
+//   if (target.innerText == "Top Picks") {
+//     getCards(cardInfoTopPicksList, sellersTabCardWrapper);
+//   } else {
+//     getCards(cardInfoTopPicksList, sellersTabCardWrapper);
+//   }
+// });
 
-
-sellersTabBtnWrapper.addEventListener("click", (event) => {
-    const target = event.target
-    
-    console.log(target.innerText == "Top Picks")
-    const ovalButtons = sellersTabBtnWrapper.querySelectorAll("button")
-    ovalButtons.forEach(button => {
-        btn.classList.remove("active")
-    })
-    target.classList.add("active")
-    // sellersTabBtnWrapper.replaceWith("")
-    if (target.innerText == "Top Picks") {
-        getCards(cardInfoTopPicksList,sellersTabCardWrapper)
-    } else {
-        getCards(cardInfoTopPicksList,sellersTabCardWrapper)
-    }
-})
-
-getCards(cardInfoTopPicksList,sellersTabCardWrapper)
-getCards(cardInfoList,earphonesTabCardWrapper)
+// getCards(cardInfoTopPicksList, sellersTabCardWrapper);
+// getCards(cardInfoList, earphonesTabCardWrapper);
